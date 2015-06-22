@@ -126,10 +126,10 @@
 					  if (match) {
 					    if (match.length == 1) {
 					      // email@address.com
-					      return !this.options.hasOwnProperty(match[0]);
+					      return !this.items.hasOwnProperty(match[0]);
 					    } else {
 					      // name <email@address.com>
-					      return !this.options.hasOwnProperty(match[2]);
+					      return !this.items.hasOwnProperty(match[2]);
 					    }
 					  }
 
